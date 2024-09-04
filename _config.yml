@@ -1,0 +1,15 @@
+title: Modelica Lab
+description: A comprehensive learning resource for Modelica and automotive modeling
+theme: jekyll-theme-minimal
+
+nav:
+  - title: Home
+    url: /
+  - title: Learning Modules
+    url: /learning-modules/
+  - title: Library
+    url: /library/
+  - title: Exercises
+    url: /exercises/
+  - title: Projects
+    url: /projects/

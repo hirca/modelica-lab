@@ -1,0 +1,30 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Modelica-specific
+*.mat
+*.log
+*.txt
+*.c
+*.h
+*.makefile
+*.libs
+*.json
+*.xml
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Other
+*.bak
+*.tmp
