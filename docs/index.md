@@ -5,10 +5,11 @@ This is a comprehensive resource for learning Modelica with a focus on automotiv
 ## Learning Modules
 
 - [Modelica Fundamentals](learning-modules/modelica-fundamentals/)
+    - [Introduction](learning-modules/modelica-fundamentals/introduction)
 - [Automotive Applications](learning-modules/automotive-applications/)
 
 ## Additional Resources
 
-- [Exercises](exercises/)
+- [Examples](examples/)
 - [Projects](projects/)
 - [Library Documentation](library/)
