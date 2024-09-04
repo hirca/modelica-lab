@@ -9,7 +9,7 @@ This repository contains a comprehensive learning resource for Modelica, with a 
 
 ## Getting Started
 
-Visit our [GitHub Pages site](https://yourusername.github.io/modelica-lab) to start learning!
+Visit our [GitHub Pages site](https://hirca.github.io/modelica-lab) to start learning!
 
 ## Contributing
 
