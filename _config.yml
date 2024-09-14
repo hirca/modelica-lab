@@ -1,7 +1,9 @@
+# Site settings
 title: Modelica Lab
-description: A comprehensive learning resource for Modelica and automotive modeling
+description: A learning resource for Modelica
 theme: jekyll-theme-minimal
 
+# Navigation
 nav:
   - title: Home
     url: /
@@ -13,3 +15,17 @@ nav:
     url: /exercises/
   - title: Projects
     url: /projects/
+
+# Collections
+collections:
+  modules:
+    output: true
+    permalink: /learning-modules/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: "docs/learning-modules"
+      type: "pages"
+    values:
+      layout: "module"
