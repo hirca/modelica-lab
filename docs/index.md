@@ -1,15 +1,34 @@
-# Welcome to Modelica Lab
+---
+layout: default
+title: Modelica Lessons and Tutorials
+---
 
-This is a comprehensive resource for learning Modelica with a focus on automotive applications.
+# Modelica Lessons and Tutorials
 
-## Learning Modules
+Welcome to our comprehensive guide on Modelica. This site contains various modules and tutorials to help you master Modelica programming.
 
-- [Modelica Fundamentals](learning-modules/modelica-fundamentals/)
-    - [Introduction](learning-modules/modelica-fundamentals/introduction)
-- [Automotive Applications](learning-modules/automotive-applications/)
+## Table of Contents
+{:.no_toc}
 
-## Additional Resources
+* TOC
+{:toc}
 
-- [Examples](examples/)
-- [Projects](projects/)
-- [Library Documentation](library/)
+## Introduction to Modelica
+
+Here you can write an introduction to Modelica.
+
+## Module 1: Basics of Modelica
+
+Brief description of Module 1.
+
+## Module 2: Advanced Modelica Concepts
+
+Brief description of Module 2.
+
+## Tutorials
+
+List of available tutorials.
+
+## Resources
+
+Additional resources and references.
