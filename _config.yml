@@ -1,31 +1,44 @@
 # Site settings
 title: Modelica Lab
 description: A learning resource for Modelica
-theme: jekyll-theme-minimal
 
-# Navigation
-nav:
-  - title: Home
-    url: /
-  - title: Learning Modules
-    url: /learning-modules/
-  - title: Library
-    url: /library/
-  - title: Exercises
-    url: /exercises/
-  - title: Projects
-    url: /projects/
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Collections
 collections:
-  modules:
+  tutorials:
     output: true
-    permalink: /learning-modules/:path/
 
 # Defaults
 defaults:
   - scope:
-      path: "docs/learning-modules"
-      type: "pages"
+      path: ""
+      type: "posts"
     values:
-      layout: "module"
+      layout: "post"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+
