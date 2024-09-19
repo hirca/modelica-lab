@@ -1,46 +1,18 @@
-# Site settings
-title: Modelica Lessons and Tutorials
-description: A comprehensive guide to Modelica with interactive examples
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Build settings
-markdown: kramdown
-kramdown:
-  toc_levels: 2..3
+# _config.yml
+title: "Modelica Lab"
+description: "A comprehensive curriculum on Modelica and OpenModelica."
+baseurl: "/modelica-lab"  # Replace with your repository name
+url: "https://hirca.github.io"
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-toc
   - jekyll-seo-tag
+  - jekyll-sitemap
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
-# Collections
-collections:
-  tutorials:
-    output: true
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "tutorials"
-    values:
-      layout: "tutorial"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/

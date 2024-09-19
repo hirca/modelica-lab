@@ -1,38 +1,16 @@
+<!-- docs/index.md -->
 ---
 layout: default
-title: Modelica Lessons and Tutorials
+title: "Home"
+nav_order: 1
 ---
 
-# Modelica Lessons and Tutorials
+# {{ site.title }}
 
-Welcome to our comprehensive guide on Modelica. This site contains various modules and tutorials to help you master Modelica programming.
+Welcome to the Modelica Lab curriculum! Below is the list of modules:
 
-## Table of Contents
+{% assign modules = site.pages | where_exp: "page", "page.path contains '/docs/' and page.path != '/docs/index.md' and page.name == 'index.md'" | sort: "nav_order" %}
 
-{% assign sorted_pages = site.pages | sort: "path" %}
-{% for page in sorted_pages %}
-  {% assign parts = page.path | split: "/" %}
-  {% if parts.size == 3 and parts[0] == "docs" and parts[2] == "index.md" %}
-    {% assign module_name = parts[1] | split: "-" | shift | join: " " | capitalize %}
-### [{{ module_name }}]({{ site.baseurl }}{{ page.url }})
-    {% for subpage in sorted_pages %}
-      {% assign subparts = subpage.path | split: "/" %}
-      {% if subparts.size == 3 and subparts[0] == "docs" and subparts[1] == parts[1] and subparts[2] != "index.md" %}
-        {% assign topic_name = subparts[2] | split: "-" | shift | shift | join: " " | capitalize | remove: ".md" %}
-- [{{ topic_name }}]({{ site.baseurl }}{{ subpage.url }})
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+{% for module in modules %}
+- [{{ module.title }}]({{ module.url | relative_url }})
 {% endfor %}
-
-## Introduction
-
-Here you can write a brief introduction to your Modelica lessons and tutorials.
-
-## How to Use This Guide
-
-Provide instructions on how to navigate through the modules and make the most of the tutorials.
-
-## Resources
-
-List any additional resources, references, or tools that might be helpful for learning Modelica.

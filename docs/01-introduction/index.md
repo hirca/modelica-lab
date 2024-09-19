@@ -1,26 +1,26 @@
+<!-- docs/01-introduction/index.md -->
 ---
 layout: default
-title: Introduction to Modelica
+title: "Module 1: Introduction"
+nav_order: 2
+has_children: true
 ---
 
-# Introduction to Modelica
+# Module 1: Introduction
 
-Welcome to the introduction module of our Modelica course. In this module, you will learn the basics of Modelica programming.
+## Introduction
 
-## Topics Covered
-
-1. [Hello World in Modelica](01-01-hello-world.md)
-2. Basic Syntax and Structure
-3. Variables and Data Types
+[Module introduction content.]
 
 ## Learning Objectives
 
-By the end of this module, you should be able to:
+- Objective 1
+- Objective 2
 
-- Understand the basic structure of a Modelica program
-- Write and run a simple Modelica model
-- Declare variables and use basic data types in Modelica
+## Subtopics
 
-## Let's Begin
+{% assign subtopics = site.pages | where: "dir", page.dir | where_exp: "page", "page.name != 'index.md'" | sort: "nav_order" %}
 
-Start with our first topic: [Hello World in Modelica](01-01-hello-world.md)
+{% for subtopic in subtopics %}
+- [{{ subtopic.title }}]({{ subtopic.url | relative_url }})
+{% endfor %}
