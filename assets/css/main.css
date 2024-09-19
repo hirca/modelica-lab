@@ -1,0 +1,36 @@
+/* Existing CSS styles... */
+
+/* Table of Contents styles */
+#markdown-toc {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#markdown-toc ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#markdown-toc ul li {
+    margin-bottom: 5px;
+}
+
+#markdown-toc ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#markdown-toc ul li a:hover {
+    text-decoration: underline;
+}

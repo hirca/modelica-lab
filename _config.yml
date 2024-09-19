@@ -1,9 +1,13 @@
 # Site settings
-title: Modelica Lab
-description: A learning resource for Modelica
+title: Modelica Lessons and Tutorials
+description: A comprehensive guide to Modelica with interactive examples
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
+kramdown:
+  toc_levels: 2..3
 theme: minima
 plugins:
   - jekyll-feed
@@ -40,5 +44,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-
